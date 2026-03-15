@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkcyan;
+    text-align: center;
+}
+
+/* .container {
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+} */
+
+/* .game {
+    height: 380px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+} */
+
+/* .box {
+    height: 120px;
+    width: 120px;
+    border: none;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px black;
+    font-size: 50px;
+    background-color: lightsalmon;
+} */
+.container {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    width: 90vw;
+    max-width: 360px;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.box {
+    aspect-ratio: 1 / 1;
+    border: none;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px black;
+    font-size: clamp(2rem, 8vw, 3rem);
+    background-color: lightsalmon;
+    touch-action: manipulation;
+}
+
+
+#mode {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+.box.X {
+    color: black ;
+}
+
+.box.O {
+    color: white ;
+}
+
+
+#reset {
+    padding: 15px;
+    font-size: 20px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 25px;
+}
+
+#new-btn {
+    padding: 15px;
+    font-size: 20px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+#msg {
+    color: bisque;
+    font-size: 50px;
+}
+
+.msg-container {
+    height: 100px;
+    margin-top: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+body.dark{
+background:#121212;
+color:white;
+}
+
+body.dark .box{
+background:#1E1E1E;
+}
+
+body.dark .box.X{
+color:#FF6B6B;
+}
+
+body.dark .box.O{
+color:#4FC3F7;
+}
+
+body.dark #reset{
+background:#FF7675;
+color:white;
+}
+
+body.dark #mode{
+background:#6C5CE7;
+color:white;
+}
+
+body.dark #new-btn{
+background:#F85149;
+color:white;
+}
+
+body.dark #msg{
+color:white;
+}
